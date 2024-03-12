@@ -5,7 +5,7 @@ namespace Modules\Blog\Entities;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class blogCommment extends Model
+class BlogField extends Model
 {
     use HasFactory;
 
@@ -13,6 +13,6 @@ class blogCommment extends Model
     
     protected static function newFactory()
     {
-        return \Modules\Blog\Database\factories\BlogCommmentFactory::new();
+        return \Modules\Blog\Database\factories\BlogFieldFactory::new();
     }
 }
