@@ -1,19 +1,18 @@
 <?php
 
-namespace Modules\Blog\Entities;
+namespace Modules\Blog\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class BlogContent extends Model
+class BlogComment extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'cid';
     protected $fillable = [];
 
     protected static function newFactory()
     {
-        return \Modules\Blog\Database\factories\BlogContentFactory::new();
+        return \Modules\Blog\Database\factories\BlogCommentFactory::new();
     }
 }

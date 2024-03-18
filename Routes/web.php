@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
-use Modules\Blog\Entities\BlogContent;
-use Nwidart\Modules\Laravel\Module;
+use Modules\Blog\Models\BlogContent;
+use App\Support\Module;
 
 /*
 |--------------------------------------------------------------------------

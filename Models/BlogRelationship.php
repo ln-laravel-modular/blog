@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Blog\Entities;
+namespace Modules\Blog\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class BlogMeta extends Model
+class BlogRelationship extends Model
 {
     use HasFactory;
 
@@ -13,6 +13,6 @@ class BlogMeta extends Model
 
     protected static function newFactory()
     {
-        return \Modules\Blog\Database\factories\BlogMetaFactory::new();
+        return \Modules\Blog\Database\factories\BlogRelationshipFactory::new();
     }
 }
